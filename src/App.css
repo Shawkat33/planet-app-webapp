@@ -18,3 +18,13 @@
 	background-color: unset;
 	filter: brightness(75%);
 }
+
+.color-text {
+	@apply text-transparent bg-clip-text active:underline active:decoration-3 active:underline-offset-4;
+	background-image: linear-gradient(-23deg, #9f62f2, #632ee3) !important;
+	background-color: unset;
+}
+
+.custom-bg {
+	background: linear-gradient(-5deg, #9f62f2, #632ee3);
+}

@@ -66,9 +66,15 @@ const Navbar = () => {
 				</ul>
 			</div>
 			<div className="navbar-end">
-				<a className="custom-btn max-[500px]:scale-80">
-					<i className="fa-brands fa-github mr-2"></i> Contribute
-				</a>
+				<Link
+					to="https://github.com/Shawkat33?tab=repositories"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<a className="custom-btn max-[500px]:scale-80">
+						<i className="fa-brands fa-github mr-2"></i> Contribute
+					</a>
+				</Link>
 			</div>
 		</div>
 	);
