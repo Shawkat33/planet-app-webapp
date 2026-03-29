@@ -71,9 +71,9 @@ const Navbar = () => {
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					<a className="custom-btn max-[500px]:scale-80">
+					<div className="custom-btn max-[500px]:scale-80">
 						<i className="fa-brands fa-github mr-2"></i> Contribute
-					</a>
+					</div>
 				</Link>
 			</div>
 		</div>

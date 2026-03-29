@@ -1,6 +1,6 @@
 [
 	{
-		"image": "./assets/Google Maps.png",
+		"image": "/assets/Google Maps.png",
 		"title": "Google Maps",
 		"companyName": "Google LLC",
 		"id": 1,
@@ -18,7 +18,7 @@
 		]
 	},
 	{
-		"image": "./assets/Whatsapp.png",
+		"image": "/assets/Whatsapp.png",
 		"title": "WhatsApp Messenger",
 		"companyName": "Meta Platforms",
 		"id": 2,
@@ -36,7 +36,7 @@
 		]
 	},
 	{
-		"image": "./assets/Apple Music.png",
+		"image": "/assets/Apple Music.png",
 		"title": "Apple Music",
 		"companyName": "Apple Inc.",
 		"id": 3,
@@ -54,7 +54,7 @@
 		]
 	},
 	{
-		"image": "./assets/Youtube.png",
+		"image": "/assets/Youtube.png",
 		"title": "YouTube",
 		"companyName": "Google LLC",
 		"id": 4,
@@ -72,7 +72,7 @@
 		]
 	},
 	{
-		"image": "./assets/Tiktok.png",
+		"image": "/assets/Tiktok.png",
 		"title": "TikTok",
 		"companyName": "ByteDance",
 		"id": 5,
@@ -90,7 +90,7 @@
 		]
 	},
 	{
-		"image": "./assets/Facebook.png",
+		"image": "/assets/Facebook.png",
 		"title": "Facebook",
 		"companyName": "Meta Platforms",
 		"id": 6,
@@ -108,7 +108,7 @@
 		]
 	},
 	{
-		"image": "./assets/Instagram.png",
+		"image": "/assets/Instagram.png",
 		"title": "Instagram",
 		"companyName": "Meta Platforms",
 		"id": 7,
@@ -126,7 +126,7 @@
 		]
 	},
 	{
-		"image": "./assets/X - Twitter.png",
+		"image": "/assets/X - Twitter.png",
 		"title": "X (Twitter)",
 		"companyName": "X Corp.",
 		"id": 8,
@@ -144,7 +144,7 @@
 		]
 	},
 	{
-		"image": "./assets/Spotify.png",
+		"image": "/assets/Spotify.png",
 		"title": "Spotify",
 		"companyName": "Spotify AB",
 		"id": 9,
@@ -162,7 +162,7 @@
 		]
 	},
 	{
-		"image": "./assets/Gmail.png",
+		"image": "/assets/Gmail.png",
 		"title": "Gmail",
 		"companyName": "Google LLC",
 		"id": 10,
@@ -180,7 +180,7 @@
 		]
 	},
 	{
-		"image": "./assets/Snapchat.png",
+		"image": "/assets/Snapchat.png",
 		"title": "Snapchat",
 		"companyName": "Snap Inc.",
 		"id": 11,
@@ -198,7 +198,7 @@
 		]
 	},
 	{
-		"image": "./assets/Zoom.png",
+		"image": "/assets/Zoom.png",
 		"title": "Zoom",
 		"companyName": "Zoom Video Communications",
 		"id": 12,
@@ -216,7 +216,7 @@
 		]
 	},
 	{
-		"image": "./assets/LinkedIn.png",
+		"image": "/assets/LinkedIn.png",
 		"title": "LinkedIn",
 		"companyName": "Microsoft",
 		"id": 13,
@@ -234,7 +234,7 @@
 		]
 	},
 	{
-		"image": "./assets/Pinterest.png",
+		"image": "/assets/Pinterest.png",
 		"title": "Pinterest",
 		"companyName": "Pinterest Inc.",
 		"id": 14,
@@ -252,7 +252,7 @@
 		]
 	},
 	{
-		"image": "./assets/Telegram.png",
+		"image": "/assets/Telegram.png",
 		"title": "Telegram",
 		"companyName": "Telegram FZ LLC",
 		"id": 15,
@@ -270,7 +270,7 @@
 		]
 	},
 	{
-		"image": "./assets/Netflix.png",
+		"image": "/assets/Netflix.png",
 		"title": "Netflix",
 		"companyName": "Netflix Inc.",
 		"id": 16,
@@ -288,7 +288,7 @@
 		]
 	},
 	{
-		"image": "./assets/Uber.png",
+		"image": "/assets/Uber.png",
 		"title": "Uber",
 		"companyName": "Uber Technologies",
 		"id": 17,
@@ -306,7 +306,7 @@
 		]
 	},
 	{
-		"image": "./assets/Amazon.png",
+		"image": "/assets/Amazon.png",
 		"title": "Amazon Shopping",
 		"companyName": "Amazon Mobile LLC",
 		"id": 18,
@@ -324,7 +324,7 @@
 		]
 	},
 	{
-		"image": "./assets/Microsoft Office.png",
+		"image": "/assets/Microsoft Office.png",
 		"title": "Microsoft Office",
 		"companyName": "Microsoft Corporation",
 		"id": 19,
@@ -342,7 +342,7 @@
 		]
 	},
 	{
-		"image": "./assets/Google Drive.png",
+		"image": "/assets/Google Drive.png",
 		"title": "Google Drive",
 		"companyName": "Google LLC",
 		"id": 20,
@@ -360,7 +360,7 @@
 		]
 	},
 	{
-		"image": "./assets/Google Photos.png",
+		"image": "/assets/Google Photos.png",
 		"title": "Google Photos",
 		"companyName": "Google LLC",
 		"id": 21,
@@ -378,7 +378,7 @@
 		]
 	},
 	{
-		"image": "./assets/Tinder.png",
+		"image": "/assets/Tinder.png",
 		"title": "Tinder",
 		"companyName": "Match Group",
 		"id": 22,
@@ -396,7 +396,7 @@
 		]
 	},
 	{
-		"image": "./assets/Paypal.png",
+		"image": "/assets/Paypal.png",
 		"title": "PayPal",
 		"companyName": "PayPal Holdings",
 		"id": 23,
@@ -414,7 +414,7 @@
 		]
 	},
 	{
-		"image": "./assets/Discord.png",
+		"image": "/assets/Discord.png",
 		"title": "Discord",
 		"companyName": "Discord Inc.",
 		"id": 24,
@@ -432,7 +432,7 @@
 		]
 	},
 	{
-		"image": "./assets/Reddit.png",
+		"image": "/assets/Reddit.png",
 		"title": "Reddit",
 		"companyName": "Reddit Inc.",
 		"id": 25,
