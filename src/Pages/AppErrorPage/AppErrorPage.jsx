@@ -16,7 +16,7 @@ const AppErrorPage = () => {
 			</h4>
 
 			<Link to="/apps">
-				<button className="custom-btn">Go Back!</button>
+				<button className="custom-btn cursor-pointer">Go Back!</button>
 			</Link>
 		</div>
 	);

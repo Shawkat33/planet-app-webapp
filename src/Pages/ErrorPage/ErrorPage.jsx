@@ -1,5 +1,6 @@
 import React from "react";
 import img from "../../../src/assets/assets/error-404.png";
+import { Link } from "react-router";
 
 const ErrorPage = () => {
 	return (
@@ -14,7 +15,9 @@ const ErrorPage = () => {
 				The page you are looking for is not available
 			</h4>
 
-			<button className="custom-btn">Go Back!</button>
+			<Link to="/">
+				<button className="custom-btn cursor-pointer">Go Back!</button>
+			</Link>
 		</div>
 	);
 };

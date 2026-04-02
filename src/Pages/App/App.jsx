@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useLoaderData, useParams } from "react-router";
 import AppErrorPage from "../AppErrorPage/AppErrorPage";
 import downloadIcon from "../../assets/assets/icon-downloads.png";

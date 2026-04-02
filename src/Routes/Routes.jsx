@@ -23,6 +23,15 @@ export const router = createBrowserRouter([
 				element: <Home />,
 			},
 			{
+				path: "/home",
+				loader: async () => {
+					const res = await fetch("/data.json");
+					const data = await res.json();
+					return data;
+				},
+				element: <Home />,
+			},
+			{
 				path: "/apps",
 				element: <Apps />,
 				loader: async () => {

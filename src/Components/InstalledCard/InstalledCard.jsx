@@ -3,7 +3,7 @@ import { Download } from "lucide-react";
 import { Link } from "react-router";
 
 const InstalledCard = ({ installedApp, handleRemove }) => {
-	console.log(installedApp);
+	// console.log(installedApp);
 
 	const { id, image, title, downloads, ratingAvg, size } = installedApp;
 

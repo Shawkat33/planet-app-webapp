@@ -1,10 +1,30 @@
-import React, { Suspense } from "react";
+import React, { useState, Suspense } from "react";
 import AppCard from "../../Components/AppCard/AppCard";
-import { useLoaderData } from "react-router";
+import { useLoaderData, useNavigate } from "react-router";
 
 const Apps = () => {
 	const data = useLoaderData();
 	const totalAppNumber = data.length;
+	const [filtered, setFiltered] = useState(data);
+	const [loading, setLoading] = useState(false);
+	const navigate = useNavigate();
+
+	const handleSearch = (e) => {
+		setLoading(true); //Starts Spinner
+		console.log(e.target.value);
+		const searchValue = e.target.value;
+		const filteredData = data.filter(
+			(app) =>
+				app.title.toLowerCase().slice(0, searchValue.length) === searchValue,
+		);
+		setFiltered(filteredData.length > 0 ? filteredData : data);
+		setTimeout(() => {
+			setLoading(false); //Stops Spinner
+			if (filteredData.length === 0 && e.key === "Enter") {
+				navigate(`/apps/${searchValue}`);
+			}
+		}, 300);
+	};
 
 	return (
 		<div className="flex flex-col justify-center text-center md:px-10 lg:px-15 xl:px-20 sm:px-5 px-2 pt-20">
@@ -39,19 +59,28 @@ const Apps = () => {
 								<path d="m21 21-4.3-4.3"></path>
 							</g>
 						</svg>
-						<input type="search" required placeholder="Search Apps" />
+						<input
+							type="search"
+							required
+							placeholder="Search Apps"
+							onKeyUp={handleSearch}
+						/>
 					</label>
 				</div>
 				<div className="grid 2xl:grid-cols-5 xl:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4 justify-items-center mx-auto max-w-fit pt-4 items-stretch">
-					<Suspense
-						fallback={
-							<span className="loading loading-spinner text-primary loading-md"></span>
-						}
-					>
-						{data.map((item) => (
-							<AppCard key={item.id} item={item}></AppCard>
-						))}
-					</Suspense>
+					{loading ? (
+						<span className="loading loading-spinner text-primary loading-xl"></span>
+					) : (
+						<Suspense
+							fallback={
+								<span className="loading loading-spinner text-primary loading-xl"></span>
+							}
+						>
+							{filtered.map((item) => (
+								<AppCard key={item.id} item={item}></AppCard>
+							))}
+						</Suspense>
+					)}
 				</div>
 			</div>
 		</div>
