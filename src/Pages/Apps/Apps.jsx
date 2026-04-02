@@ -11,7 +11,7 @@ const Apps = () => {
 
 	const handleSearch = (e) => {
 		setLoading(true); //Starts Spinner
-		console.log(e.target.value);
+		// console.log(e.target.value);
 		const searchValue = e.target.value;
 		const filteredData = data.filter(
 			(app) =>
@@ -72,7 +72,7 @@ const Apps = () => {
 					<span className="loading loading-spinner text-primary loading-xl"></span>
 				) : filtered.length === 0 ? (
 					<>
-						<h2 className="text-5xl leading-15 font-semibold text-[#627382] text-center">
+						<h2 className="text-5xl leading-15 font-semibold text-[#627382] text-center pt-6">
 							No Apps Found
 						</h2>
 						<Link to="/apps" onClick={() => window.scrollTo(0, 0)}>
