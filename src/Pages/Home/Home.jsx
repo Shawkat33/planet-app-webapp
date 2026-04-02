@@ -82,7 +82,7 @@ const Home = () => {
 				<h4 className="text-xl text-[#627382] mb-10">
 					Explore All Trending Apps on the Market developed by us
 				</h4>
-				<div className="grid 2xl:grid-cols-5 xl:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4 justify-items-center mx-auto max-w-fit">
+				<div className="grid xl:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4 justify-items-center mx-auto max-w-fit">
 					<Suspense
 						fallback={
 							<span className="loading loading-spinner text-primary loading-md"></span>

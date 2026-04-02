@@ -1,6 +1,7 @@
 import React from "react";
 import { Download } from "lucide-react";
 import { Link } from "react-router";
+import { toast } from "react-toastify";
 
 const InstalledCard = ({ installedApp, handleRemove }) => {
 	// console.log(installedApp);
@@ -17,7 +18,7 @@ const InstalledCard = ({ installedApp, handleRemove }) => {
 
 	return (
 		<Link to={`/apps/${id}`}>
-			<div className="w-full rounded-md bg-white p-4 ">
+			<div className="w-full rounded-md bg-white p-4 shadow-md transition-transform transition-shadow duration-75 hover:-translate-y-1 hover:shadow-lg">
 				<div className="flex flex-wrap gap-4">
 					<img
 						className="w-20 h-20 rounded-md bg-[#D9D9D9]"
@@ -46,6 +47,7 @@ const InstalledCard = ({ installedApp, handleRemove }) => {
 								e.preventDefault();
 								e.stopPropagation();
 								handleRemove(id);
+								toast.info(`${title} Uninstalled!`);
 							}}
 							className="rounded-sm bg-[#00D390] text-white px-5 py-3.5 font-semibold text-[20px] hover:brightness-105 hover:scale-105 cursor-pointer duration-75 active:brightness-90 active:scale-100"
 						>

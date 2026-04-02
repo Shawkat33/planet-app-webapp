@@ -15,7 +15,7 @@ const AppCard = ({ item }) => {
 
 	return (
 		<Link to={`/apps/${id}`} onClick={() => window.scrollTo(0, 0)}>
-			<div className="p-4 rounded-3xl flex flex-col gap-4 bg-white max-w-80 h-full inter justify-between">
+			<div className="p-4 rounded-3xl flex flex-col gap-4 bg-white max-w-80 h-full inter justify-between shadow-lg transition-transform transition-shadow duration-100 hover:-translate-y-1 hover:shadow-xl">
 				<div className="w-full h-full flex justify-center ">
 					<img className="object-contain" src={image} alt="" />
 				</div>

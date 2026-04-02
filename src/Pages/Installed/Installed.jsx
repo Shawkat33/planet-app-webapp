@@ -3,6 +3,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { getInstalledApps, removeInstalledApps } from "../../Utils/addToDB";
 import InstalledCard from "../../Components/InstalledCard/InstalledCard";
 import { useLoaderData } from "react-router";
+import { ToastContainer } from "react-toastify";
 
 const Installed = () => {
 	const [installedApps, setInstalledApps] = useState(getInstalledApps());
@@ -104,6 +105,7 @@ const Installed = () => {
 					))}
 				</div>
 			</div>
+			<ToastContainer />
 		</div>
 	);
 };

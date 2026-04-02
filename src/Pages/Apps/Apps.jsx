@@ -1,6 +1,6 @@
 import React, { useState, Suspense } from "react";
 import AppCard from "../../Components/AppCard/AppCard";
-import { useLoaderData, useNavigate } from "react-router";
+import { useLoaderData, useNavigate, Link } from "react-router";
 
 const Apps = () => {
 	const data = useLoaderData();
@@ -17,7 +17,7 @@ const Apps = () => {
 			(app) =>
 				app.title.toLowerCase().slice(0, searchValue.length) === searchValue,
 		);
-		setFiltered(filteredData.length > 0 ? filteredData : data);
+		setFiltered(filteredData);
 		setTimeout(() => {
 			setLoading(false); //Stops Spinner
 			if (filteredData.length === 0 && e.key === "Enter") {
@@ -34,7 +34,7 @@ const Apps = () => {
 			<h3 className="inter text-xl text-[#627382]">
 				Explore All Apps on the Market developed by us. We code for Millions
 			</h3>
-			<div className="md:px-20 sm:px-5 px-2 pt-10 pb-20">
+			<div className="md:px-10 lg:px-15 xl:px-50 sm:px-5 px-2 pt-10 pb-20">
 				<div
 					className="flex flex-col sm:flex-row max-lg:items-center
 				max-lg:gap-4 justify-between"
@@ -67,10 +67,22 @@ const Apps = () => {
 						/>
 					</label>
 				</div>
-				<div className="grid 2xl:grid-cols-5 xl:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4 justify-items-center mx-auto max-w-fit pt-4 items-stretch">
-					{loading ? (
-						<span className="loading loading-spinner text-primary loading-xl"></span>
-					) : (
+
+				{loading ? (
+					<span className="loading loading-spinner text-primary loading-xl"></span>
+				) : filtered.length === 0 ? (
+					<>
+						<h2 className="text-5xl leading-15 font-semibold text-[#627382] text-center">
+							No Apps Found
+						</h2>
+						<Link to="/apps" onClick={() => window.scrollTo(0, 0)}>
+							<div className="custom-btn mt-10 cursor-pointer">
+								See All Apps
+							</div>
+						</Link>
+					</>
+				) : (
+					<div className="grid xl:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4 justify-items-center mx-auto max-w-fit pt-4 items-stretch">
 						<Suspense
 							fallback={
 								<span className="loading loading-spinner text-primary loading-xl"></span>
@@ -80,8 +92,8 @@ const Apps = () => {
 								<AppCard key={item.id} item={item}></AppCard>
 							))}
 						</Suspense>
-					)}
-				</div>
+					</div>
+				)}
 			</div>
 		</div>
 	);

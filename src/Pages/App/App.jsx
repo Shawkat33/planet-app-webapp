@@ -15,6 +15,7 @@ import {
 	ResponsiveContainer,
 } from "recharts";
 import { getInstalledApps, setInstalledApps } from "../../Utils/addToDB";
+import { ToastContainer, toast } from "react-toastify";
 
 const App = () => {
 	const params = useParams();
@@ -151,7 +152,9 @@ const App = () => {
 					<button
 						disabled={installedAppsList.includes(String(id))}
 						onClick={() => {
-							(setInstalledApps(id), handleInstall());
+							(setInstalledApps(id),
+								handleInstall(),
+								toast.success(`${title} Installed!`));
 						}}
 						className="rounded-sm bg-[#00D390] text-white px-5 py-3.5 font-semibold text-[20px] hover:brightness-105 hover:scale-105 cursor-pointer duration-75 active:brightness-90 active:scale-100 self-center lg:self-start disabled:bg-gray-300 disabled:cursor-not-allowed"
 					>
@@ -182,6 +185,7 @@ const App = () => {
 
 				<span className="text-[#627382] text-xl leading-8">{description}</span>
 			</div>
+			<ToastContainer />
 		</div>
 	);
 };
