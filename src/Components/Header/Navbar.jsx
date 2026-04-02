@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import logo from "../../assets/assets/logo.png";
 
 const Navbar = () => {
 	return (
@@ -45,6 +46,7 @@ const Navbar = () => {
 					</ul>
 				</div>
 				<Link to="/" className="btn btn-ghost text-xl">
+					<img className="w-10 h-10" src={logo} alt="" />
 					Planet App
 				</Link>
 			</div>
