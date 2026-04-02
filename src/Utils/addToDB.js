@@ -23,7 +23,7 @@ export const removeInstalledApps = (removeId) => {
 		(id) => id !== String(removeId),
 	);
 
-	console.log(currentInstalledApps);
+	// console.log(currentInstalledApps);
 
 	localStorage.setItem("Installed", JSON.stringify(currentInstalledApps));
 };

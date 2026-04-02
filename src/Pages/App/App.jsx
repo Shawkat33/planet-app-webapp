@@ -33,7 +33,7 @@ const App = () => {
 	}
 
 	const [appData] = data.filter((app) => app.id === parseInt(params.appId));
-	console.log(appData);
+	// console.log(appData);
 
 	const {
 		title,
